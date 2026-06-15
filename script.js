@@ -13,12 +13,11 @@ function updateCountdown() {
     const currentYear = today.getFullYear();
     
     // Nächster Geburtstag
-    let birthDate = new Date(currentYear, 5, 22); // Juni = 5 (0-indexed)
+    let birthDate = new Date(2027, 5, 22); // Juni = 5 (0-indexed)
     
     // Wenn Geburtstag dieses Jahr schon vorbei ist, nächstes Jahr
-    if (today > birthDate) {
-        birthDate = new Date(currentYear + 1, 5, 22);
-    }
+
+   
     
     // Zeitdifferenz berechnen
     const diff = birthDate - today;
