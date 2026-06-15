@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 Leonies Geburtstag 🎂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Konfetti Container -->
+    <div id="confetti-container"></div>
+    
+    <!-- Ballons Container -->
+    <div id="balloons-container"></div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Header mit Glitch-Effekt -->
+        <div class="header">
+            <h1 class="glitch" data-text="ALLES GUTE ZUM GEBURTSTAG">ALLES GUTE ZUM GEBURTSTAG</h1>
+            <p class="subheader">🎂 Leonie 🎂</p>
+        </div>
+
+        <!-- Geburtstag Info -->
+        <div class="birthday-info">
+            <div class="info-card">
+                <span class="emoji">🎂</span>
+                <p>Geburtstag: <strong>22. Juni 2010</strong></p>
+            </div>
+            <div class="info-card">
+                <span class="emoji">🎈</span>
+                <p>Alter: <strong id="age">-</strong> Jahre</p>
+            </div>
+        </div>
+
+        <!-- Countdown -->
+        <div class="countdown-section">
+            <h2>⏰ Nächster Geburtstag in:</h2>
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">0</span>
+                    <span class="countdown-label">Tage</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">0</span>
+                    <span class="countdown-label">Stunden</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">0</span>
+                    <span class="countdown-label">Minuten</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">0</span>
+                    <span class="countdown-label">Sekunden</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wünsche Section -->
+        <div class="wishes-section">
+            <h2>💌 Geburtstagswünsche</h2>
+            <div class="wishes-grid">
+                <div class="wish-card">
+                    <span class="wish-emoji">✨</span>
+                    <p>Alles Glück der Welt für dich!</p>
+                </div>
+                <div class="wish-card">
+                    <span class="wish-emoji">🌟</span>
+                    <p>Mögen deine Träume wahr werden!</p>
+                </div>
+                <div class="wish-card">
+                    <span class="wish-emoji">❤️</span>
+                    <p>Genieße jeden Moment!</p>
+                </div>
+                <div class="wish-card">
+                    <span class="wish-emoji">🎉</span>
+                    <p>Happy Birthday, Leonie!</p>
+                </div>
+                <div class="wish-card">
+                    <span class="wish-emoji">🎁</span>
+                    <p>Viel Spaß beim Feiern!</p>
+                </div>
+                <div class="wish-card">
+                    <span class="wish-emoji">🌈</span>
+                    <p>Dein Tag, deine Party!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interaktive Elemente -->
+        <div class="interactive-section">
+            <h2>🎮 Interaktive Überraschungen</h2>
+            <div class="button-group">
+                <button class="magic-button" id="confetti-btn" onclick="triggerConfetti()">🎊 Konfetti!</button>
+                <button class="magic-button" id="balloons-btn" onclick="addMoreBalloons()">🎈 Ballons!</button>
+                <button class="magic-button" id="music-btn" onclick="toggleMusic()">🎵 Musik An/Aus</button>
+                <button class="magic-button" id="hearts-btn" onclick="triggerHearts()">💕 Herzen!</button>
+            </div>
+        </div>
+
+        <!-- Musik -->
+        <audio id="birthday-music" loop>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- Footer -->
+        <footer>
+            <p>Made with ❤️ für Leonie | 🎂 Happy Birthday! 🎂</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
